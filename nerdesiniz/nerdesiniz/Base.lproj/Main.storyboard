@@ -102,7 +102,7 @@
                                                                                     <action selector="didSelectColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jLH-24-l0g"/>
                                                                                 </connections>
                                                                             </button>
-                                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fum-p0-PFj">
+                                                                            <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fum-p0-PFj">
                                                                                 <rect key="frame" x="36" y="0.0" width="31.5" height="32"/>
                                                                                 <color key="backgroundColor" red="0.96862745100000003" green="0.74509803919999995" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
                                                                                 <constraints>
@@ -112,7 +112,7 @@
                                                                                     <action selector="didSelectColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9CE-9m-umZ"/>
                                                                                 </connections>
                                                                             </button>
-                                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cR-ct-Thq">
+                                                                            <button opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cR-ct-Thq">
                                                                                 <rect key="frame" x="71.5" y="0.0" width="32" height="32"/>
                                                                                 <color key="backgroundColor" white="0.47999999999999998" alpha="1" colorSpace="calibratedWhite"/>
                                                                                 <constraints>
@@ -122,7 +122,7 @@
                                                                                     <action selector="didSelectColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="33n-1B-is3"/>
                                                                                 </connections>
                                                                             </button>
-                                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rs2-WJ-Rw8">
+                                                                            <button opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rs2-WJ-Rw8">
                                                                                 <rect key="frame" x="107.5" y="0.0" width="32" height="32"/>
                                                                                 <color key="backgroundColor" red="0.17688992418203664" green="0.27006822048152868" blue="0.86449079949238583" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                 <constraints>
@@ -233,6 +233,10 @@
                         <outlet property="loginButton" destination="9qr-Y4-xxy" id="bC0-3r-KIz"/>
                         <outlet property="nameTextField" destination="atc-P7-MhX" id="XVT-EA-jnS"/>
                         <outlet property="roomNumberTextField" destination="2Xp-44-Uaj" id="cr0-C8-hKe"/>
+                        <outletCollection property="colorButtons" destination="Fum-p0-PFj" collectionClass="NSMutableArray" id="msR-DY-RAU"/>
+                        <outletCollection property="colorButtons" destination="kOc-SP-OZe" collectionClass="NSMutableArray" id="v1A-F1-mWw"/>
+                        <outletCollection property="colorButtons" destination="0cR-ct-Thq" collectionClass="NSMutableArray" id="0lJ-II-dwV"/>
+                        <outletCollection property="colorButtons" destination="Rs2-WJ-Rw8" collectionClass="NSMutableArray" id="KBy-In-LWI"/>
                         <segue destination="UwG-GX-H5o" kind="show" identifier="showMapView" id="iZl-jJ-f0L"/>
                     </connections>
                 </viewController>

@@ -12,6 +12,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var roomNumberTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet var colorButtons: [UIButton]!{
+        didSet{
+            for button in colorButtons{
+                button.layer.cornerRadius = button.frame.height / 2
+            }
+        }
+    }
     
     
     @IBAction func didSelectColor(_ sender: UIButton) {
