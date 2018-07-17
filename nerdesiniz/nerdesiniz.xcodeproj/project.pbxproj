@@ -14,6 +14,7 @@
 		DA11D5F120FE4C5B0086AE5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA11D5EF20FE4C5B0086AE5A /* LaunchScreen.storyboard */; };
 		DA11D5FC20FE4C5C0086AE5A /* nerdesinizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11D5FB20FE4C5B0086AE5A /* nerdesinizTests.swift */; };
 		DA11D60720FE4C5C0086AE5A /* nerdesinizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11D60620FE4C5C0086AE5A /* nerdesinizUITests.swift */; };
+		DA11D61520FE55A20086AE5A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11D61420FE55A20086AE5A /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		DA11D60220FE4C5C0086AE5A /* nerdesinizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nerdesinizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA11D60620FE4C5C0086AE5A /* nerdesinizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nerdesinizUITests.swift; sourceTree = "<group>"; };
 		DA11D60820FE4C5C0086AE5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA11D61420FE55A20086AE5A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				DA11D5E620FE4C570086AE5A /* AppDelegate.swift */,
 				DA11D5E820FE4C570086AE5A /* ViewController.swift */,
+				DA11D61420FE55A20086AE5A /* MapViewController.swift */,
 				DA11D5EA20FE4C570086AE5A /* Main.storyboard */,
 				DA11D5ED20FE4C5B0086AE5A /* Assets.xcassets */,
 				DA11D5EF20FE4C5B0086AE5A /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA11D5E920FE4C570086AE5A /* ViewController.swift in Sources */,
+				DA11D61520FE55A20086AE5A /* MapViewController.swift in Sources */,
 				DA11D5E720FE4C570086AE5A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
