@@ -20,16 +20,6 @@ class ViewController: UIViewController {
         }
     }
     
-    
-    @IBAction func didSelectColor(_ sender: UIButton) {
-        let buttonColor = sender.backgroundColor
-        self.view.backgroundColor = buttonColor
-        self.loginButton.backgroundColor = buttonColor
-    }
-    
-    @IBAction func didTapLogin(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "showMapView", sender: nil)
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -39,12 +29,20 @@ class ViewController: UIViewController {
             self.navigationController?.setNavigationBarHidden(true, animated: true)
         }
     }
-    
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func didSelectColor(_ sender: UIButton) {
+        let buttonColor = sender.backgroundColor
+        self.view.backgroundColor = buttonColor
+        self.loginButton.backgroundColor = buttonColor
+    }
+    
+    @IBAction func didTapLogin(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "showMapView", sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
