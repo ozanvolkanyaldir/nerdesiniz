@@ -278,6 +278,9 @@
                         <viewLayoutGuide key="safeArea" id="VxM-ks-iGm"/>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="mapView" destination="59X-7V-K5M" id="9I6-vf-igg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uyl-17-CE7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

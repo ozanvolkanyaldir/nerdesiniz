@@ -18,6 +18,7 @@
 		DA11D5FC20FE4C5C0086AE5A /* nerdesinizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11D5FB20FE4C5B0086AE5A /* nerdesinizTests.swift */; };
 		DA11D60720FE4C5C0086AE5A /* nerdesinizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11D60620FE4C5C0086AE5A /* nerdesinizUITests.swift */; };
 		DA11D61520FE55A20086AE5A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11D61420FE55A20086AE5A /* MapViewController.swift */; };
+		DA11D61720FF9C4D0086AE5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA11D61620FF9C4D0086AE5A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		DA11D60620FE4C5C0086AE5A /* nerdesinizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nerdesinizUITests.swift; sourceTree = "<group>"; };
 		DA11D60820FE4C5C0086AE5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA11D61420FE55A20086AE5A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		DA11D61620FF9C4D0086AE5A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA122E4634A44116B1A6E516 /* Pods-nerdesiniz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nerdesiniz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nerdesiniz/Pods-nerdesiniz.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +148,7 @@
 				DA11D5ED20FE4C5B0086AE5A /* Assets.xcassets */,
 				DA11D5EF20FE4C5B0086AE5A /* LaunchScreen.storyboard */,
 				DA11D5F220FE4C5B0086AE5A /* Info.plist */,
+				DA11D61620FF9C4D0086AE5A /* GoogleService-Info.plist */,
 			);
 			path = nerdesiniz;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				DA11D5E020FE4C570086AE5A /* Frameworks */,
 				DA11D5E120FE4C570086AE5A /* Resources */,
 				B4DD1130ACE2A7588F40DC08 /* [CP] Embed Pods Frameworks */,
+				57457A6D3A987EFEF91E0965 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -277,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA11D5F120FE4C5B0086AE5A /* LaunchScreen.storyboard in Resources */,
+				DA11D61720FF9C4D0086AE5A /* GoogleService-Info.plist in Resources */,
 				DA11D5EE20FE4C5B0086AE5A /* Assets.xcassets in Resources */,
 				DA11D5EC20FE4C570086AE5A /* Main.storyboard in Resources */,
 			);
@@ -299,6 +304,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		57457A6D3A987EFEF91E0965 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-nerdesiniz/Pods-nerdesiniz-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nerdesiniz/Pods-nerdesiniz-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7113A969CA8AA9CAB464642A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -324,12 +347,18 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-nerdesiniz/Pods-nerdesiniz-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
